@@ -1,282 +1,305 @@
-<!DOCTYPE html>
+      <!doctype html>
 <html lang="bn">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে | নবরেখা নিউজ</title>
+  <title>নবরেখা নিউজ | সত্যের পথে, বিশ্বের সাথে</title>
 
-<style>
+  <meta name="description"
+        content="নবরেখা নিউজ — দেশ-বিদেশের সর্বশেষ সংবাদ।">
 
-*{
-  box-sizing:border-box;
-}
+  <!-- Facebook / Messenger Preview -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে">
+  <meta property="og:description" content="বাংলাদেশের তরুণ ওপেনার তানজিদ হাসান তামিম ২০২৬ সালের জুলাই মাসের আইসিসি পুরুষদের মাস সেরা খেলোয়াড় হওয়ার জন্য মনোনীত হয়েছেন।">
+  <meta property="og:image" content="https://noborekhanews.github.io/noborekha-news/tanzid.png">
+  <meta property="og:url" content="https://noborekhanews.github.io/noborekha-news/">
+  <meta property="og:site_name" content="নবরেখা নিউজ">
+  <meta property="og:image:width" content="1100">
+  <meta property="og:image:height" content="1467">
 
-body{
-  margin:0;
-  background:#eef2ef;
-  font-family:"Noto Sans Bengali","SolaimanLipi",Arial,sans-serif;
-  color:#222;
-}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে">
+  <meta name="twitter:description" content="তানজিদ হাসান তামিম ২০২৬ সালের জুলাই মাসের আইসিসি পুরুষদের মাস সেরা খেলোয়াড় হওয়ার জন্য মনোনীত হয়েছেন।">
+  <meta name="twitter:image" content="https://noborekhanews.github.io/noborekha-news/tanzid.png">
 
-/* মূল কনটেইনার */
-
-.container{
-  max-width:900px;
-  margin:20px auto;
-  background:#ffffff;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 5px 25px rgba(0,0,0,.12);
-}
-
-/* হেডার */
-
-.header{
-  background:linear-gradient(135deg,#006b35,#009447);
-  padding:18px 20px;
-  color:white;
-}
-
-.logo{
-  font-size:25px;
-  font-weight:bold;
-}
-
-.tagline{
-  font-size:13px;
-  margin-top:3px;
-  opacity:.95;
-}
-
-/* নিউজের ছবি */
-
-.main-image{
-  width:100%;
-  display:block;
-  height:auto;
-}
-
-/* নিউজের অংশ */
-
-.article{
-  padding:25px;
-}
-
-/* ক্যাটাগরি */
-
-.category{
-  display:inline-block;
-  background:#e51b23;
-  color:#fff;
-  padding:6px 14px;
-  border-radius:20px;
-  font-size:14px;
-  font-weight:bold;
-  margin-bottom:12px;
-}
-
-/* শিরোনাম */
-
-h1{
-  font-size:34px;
-  line-height:1.45;
-  color:#075f32;
-  margin:5px 0 12px;
-}
-
-/* তারিখ */
-
-.meta{
-  color:#777;
-  font-size:14px;
-  border-bottom:1px solid #ddd;
-  padding-bottom:15px;
-  margin-bottom:22px;
-}
-
-/* নিউজ লেখা */
-
-.article p{
-  font-size:18px;
-  line-height:2;
-  margin:0 0 20px;
-}
-
-.article strong{
-  color:#087f3d;
-}
-
-/* পরিসংখ্যান */
-
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:12px;
-  margin:25px 0;
-}
-
-.stat{
-  background:#f0f8f3;
-  border:1px solid #cce5d5;
-  border-radius:12px;
-  padding:16px 10px;
-  text-align:center;
-}
-
-.stat b{
-  display:block;
-  font-size:27px;
-  color:#087f3d;
-}
-
-.stat span{
-  font-size:14px;
-  color:#555;
-}
-
-/* ভোট বক্স */
-
-.vote{
-  background:linear-gradient(135deg,#075f32,#009447);
-  color:white;
-  padding:25px;
-  text-align:center;
-  border-radius:15px;
-  margin-top:30px;
-}
-
-.vote h2{
-  margin:0 0 10px;
-  font-size:25px;
-}
-
-.vote p{
-  font-size:16px;
-  margin-bottom:18px;
-}
-
-.vote-button{
-  display:inline-block;
-  background:#e51b23;
-  color:white;
-  text-decoration:none;
-  padding:13px 28px;
-  border-radius:30px;
-  font-size:18px;
-  font-weight:bold;
-}
-
-.vote-button:hover{
-  background:#c9151c;
-}
-
-/* নিচের অংশ */
-
-.footer{
-  background:#063b23;
-  color:white;
-  text-align:center;
-  padding:18px;
-  font-size:14px;
-}
-
-/* মোবাইল */
-
-@media(max-width:600px){
-
-  .container{
-    margin:0;
-    border-radius:0;
-  }
-
-  .logo{
-    font-size:21px;
-  }
-
-  h1{
-    font-size:26px;
-  }
-
-  .article{
-    padding:18px;
-  }
-
-  .article p{
-    font-size:16px;
-    line-height:1.9;
-  }
-
-  .stats{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .stat b{
-    font-size:22px;
-  }
-
-  .vote h2{
-    font-size:21px;
-  }
-
-}
-
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="container">
+<!-- TOP BAR -->
+<header class="top">
+  <div class="wrap topin">
+    <span>নবরেখা নিউজ</span>
+    <a href="#contact">যোগাযোগ</a>
+  </div>
+</header>
 
-  <!-- নবরেখা নিউজ হেডার -->
 
-  <div class="header">
+<!-- NAVIGATION -->
+<nav class="nav">
 
-    <div class="logo">
-      নবরেখা নিউজ
-    </div>
+  <div class="wrap navin">
 
-    <div class="tagline">
-      সত্যের পথে, বিশ্বের সাথে
+    <a class="brand" href="#">
+
+      <img src="logo.png" alt="নবরেখা নিউজ">
+
+      <span>
+        <b>নবরেখা নিউজ</b>
+        <small>সত্যের পথে, বিশ্বের সাথে</small>
+      </span>
+
+    </a>
+
+
+    <button class="menu" onclick="toggleMenu()">☰</button>
+
+
+    <div class="links" id="navMenu">
+
+      <a href="#latest">সর্বশেষ</a>
+
+      <a href="#national">জাতীয়</a>
+
+      <a href="#politics">রাজনীতি</a>
+
+      <a href="#world">দেশ-বিদেশ</a>
+
+      <a href="#economy">অর্থনীতি</a>
+
+      <a href="#sports">খেলাধুলা</a>
+
+      <a href="#entertainment">বিনোদন</a>
+
     </div>
 
   </div>
 
-
-  <!-- তানজিদ হাসান তামিমের ছবি -->
-  
-  <img
-    src="tanzid.png"
-    alt="তানজিদ হাসান তামিম"
-    class="main-image"
-  >
+</nav>
 
 
-  <!-- নিউজ -->
+<!-- HERO -->
+<section class="hero">
 
-  <article class="article">
+  <div class="wrap heroGrid">
 
-    <span class="category">
-      🏏 ক্রিকেট
-    </span>
+    <div>
 
+      <span class="badge">নবরেখা নিউজ</span>
 
-    <h1>
-      তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে
-    </h1>
+      <h1>
+        সত্যের পথে,<br>
+        বিশ্বের সাথে
+      </h1>
 
+      <p>
+        দেশ-বিদেশের সর্বশেষ সংবাদ, গুরুত্বপূর্ণ তথ্য
+        ও যাচাই করা খবর এক জায়গায়।
+      </p>
 
-    <div class="meta">
-      📅 জুলাই ২০২৬ &nbsp; | &nbsp; নবরেখা নিউজ
+      <a class="btn"
+         href="https://www.facebook.com/noborekhanews"
+         target="_blank">
+        Facebook Page
+      </a>
+
     </div>
 
 
+    <div class="heroBox">
+
+      <img src="logo.png" alt="নবরেখা নিউজ লোগো">
+
+      <h3>
+        দ্রুত, নির্ভুল ও দায়িত্বশীল সংবাদ
+      </h3>
+
+      <p>
+        নবরেখা নিউজের সঙ্গে থাকুন।
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BREAKING NEWS -->
+<div class="ticker">
+
+  <div class="wrap">
+
+    <b>সর্বশেষ:</b>
+
+    তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে
+
+  </div>
+
+</div>
+
+
+<main class="wrap">
+
+
+<!-- সর্বশেষ সংবাদ -->
+<section class="section" id="latest">
+
+  <div class="heading">
+
+    <h2>সর্বশেষ সংবাদ</h2>
+
+    <span>Latest News</span>
+
+  </div>
+
+
+  <div class="grid">
+
+
+    <!-- তানজিদ হাসান তামিমের সংবাদ -->
+    <article class="card big">
+
+      <div class="photo">
+
+        <img
+          src="tanzid.png"
+          alt="তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে"
+        >
+
+      </div>
+
+
+      <div class="body">
+
+        <i>খেলাধুলা</i>
+
+        <h3>
+          তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে
+        </h3>
+
+        <p>
+          বাংলাদেশের তরুণ ওপেনার তানজিদ হাসান তামিম
+          ২০২৬ সালের জুলাই মাসের আইসিসি পুরুষদের
+          মাস সেরা খেলোয়াড় হওয়ার জন্য মনোনীত হয়েছেন।
+        </p>
+
+        <a class="btn" href="#tanzid-news">
+          বিস্তারিত পড়ুন
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- ইলিশের সংবাদ -->
+    <article class="card">
+
+      <div class="photo">
+
+        <img
+          src="ilish-news.png"
+          alt="ইলিশের উৎপাদন ও সংরক্ষণে নানা পদক্ষেপ নেবে সরকার"
+        >
+
+      </div>
+
+      <div class="body">
+
+        <i>জাতীয়</i>
+
+        <h3>
+          ইলিশের উৎপাদন ও সংরক্ষণে নানা পদক্ষেপ নেবে সরকার
+        </h3>
+
+        <p>
+          দেশের জাতীয় মাছ ইলিশের উৎপাদন বাড়ানো ও সংরক্ষণে
+          নানা উদ্যোগ নেওয়ার বিষয়ে সংশ্লিষ্টদের সঙ্গে
+          মতবিনিময় হয়েছে।
+        </p>
+
+        <a class="btn" href="#ilish-news">
+          বিস্তারিত পড়ুন
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- তৃতীয় সংবাদ -->
+    <article class="card">
+
+      <div class="photo">
+        দেশ-বিদেশ
+      </div>
+
+      <div class="body">
+
+        <i>দেশ-বিদেশ</i>
+
+        <h3>
+          দেশ-বিদেশের গুরুত্বপূর্ণ আপডেট
+        </h3>
+
+        <p>
+          দেশ-বিদেশের যাচাই করা সর্বশেষ তথ্য।
+        </p>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- তানজিদ হাসান তামিমের বিস্তারিত নিউজ -->
+<section class="section" id="tanzid-news">
+
+  <div class="heading">
+
+    <h2>
+      তানজিদ হাসান তামিম আইসিসির মাস সেরার দৌড়ে
+    </h2>
+
+    <span>খেলাধুলা</span>
+
+  </div>
+
+
+  <div class="box">
+
+
+    <!-- তানজিদের ছবি -->
+
+    <img
+      src="tanzid.png"
+      alt="তানজিদ হাসান তামিম"
+      style="
+        width:100%;
+        max-width:900px;
+        display:block;
+        margin:0 auto 25px;
+        border-radius:12px;
+      "
+    >
+
+
     <p>
-      বাংলাদেশের তরুণ ওপেনার
-      <strong>তানজিদ হাসান তামিম</strong>
+      <strong>নবরেখা নিউজ ডেস্ক</strong>
+    </p>
+
+
+    <p>
+      বাংলাদেশের তরুণ ওপেনার তানজিদ হাসান তামিম
       ২০২৬ সালের জুলাই মাসের আইসিসি পুরুষদের
-      <strong>মাস সেরা খেলোয়াড়</strong>
-      হওয়ার জন্য মনোনীত হয়েছেন।
+      মাস সেরা খেলোয়াড় হওয়ার জন্য মনোনীত হয়েছেন।
     </p>
 
 
@@ -286,28 +309,6 @@ h1{
       তাঁর ধারাবাহিক ব্যাটিং পারফরম্যান্স তাঁকে মাস সেরার
       তালিকায় জায়গা করে দিয়েছে।
     </p>
-
-
-    <!-- পরিসংখ্যান -->
-
-    <div class="stats">
-
-      <div class="stat">
-        <b>১৫৯</b>
-        <span>রান</span>
-      </div>
-
-      <div class="stat">
-        <b>৫৩.০০</b>
-        <span>ব্যাটিং গড়</span>
-      </div>
-
-      <div class="stat">
-        <b>৮৯.৮৩</b>
-        <span>স্ট্রাইক রেট</span>
-      </div>
-
-    </div>
 
 
     <p>
@@ -324,40 +325,228 @@ h1{
     </p>
 
 
-    <!-- ভোট -->
+    <p>
+      <strong>
+        আইসিসির মাস সেরা খেলোয়াড় নির্বাচনে তানজিদ হাসান তামিমকে
+        ভোট দিতে নিচের বাটনে চাপুন।
+      </strong>
+    </p>
 
-    <div class="vote">
 
-      <h2>
-        🗳️ তানজিদ হাসান তামিমকে ভোট দিন
-      </h2>
-
-      <p>
-        আইসিসির মাস সেরা খেলোয়াড় নির্বাচনে
-        আপনার মূল্যবান ভোট দিন।
-      </p>
+    <p style="text-align:center; margin-top:25px;">
 
       <a
+        class="btn"
         href="https://tinyurl.com/mt2cbjvw"
         target="_blank"
-        rel="noopener"
-        class="vote-button"
-      >
-        এখনই ভোট দিন →
+        rel="noopener">
+
+        🗳️ এখনই ভোট দিন
+
       </a>
 
-    </div>
-
-  </article>
+    </p>
 
 
-  <!-- ফুটার -->
+    <p>
+      <strong>
+        ভোট শেষ হবে: ১৪ আগস্ট ২০২৬ বিকেল ৩টা ৩০ মিনিট
+        (বাংলাদেশ সময়)।
+      </strong>
+    </p>
 
-  <div class="footer">
-    © ২০২৬ নবরেখা নিউজ
   </div>
 
-</div>
+</section>
+
+
+<!-- ইলিশের বিস্তারিত নিউজ -->
+<section class="section" id="ilish-news">
+
+  <div class="heading">
+
+    <h2>
+      ইলিশের উৎপাদন ও সংরক্ষণে নানা পদক্ষেপ নেবে সরকার
+    </h2>
+
+    <span>জাতীয়</span>
+
+  </div>
+
+
+  <div class="box">
+
+
+    <img
+      src="ilish-news.png"
+      alt="ইলিশের উৎপাদন ও সংরক্ষণ নিয়ে মতবিনিময়"
+      style="
+        width:100%;
+        max-width:900px;
+        display:block;
+        margin:0 auto 25px;
+        border-radius:12px;
+      "
+    >
+
+
+    <p>
+      <strong>নবরেখা নিউজ ডেস্ক</strong>
+    </p>
+
+
+    <p>
+      দেশের জাতীয় মাছ ইলিশের উৎপাদন বাড়ানো ও সংরক্ষণে
+      নানা উদ্যোগ নেওয়ার বিষয়ে সংশ্লিষ্টদের সঙ্গে
+      মতবিনিময় হয়েছে।
+    </p>
+
+
+    <p>
+      ইলিশের উৎপাদন বৃদ্ধি, প্রজনন ও নিরাপদ বিচরণ নিশ্চিত
+      করার পাশাপাশি ইলিশের সংরক্ষণে কার্যকর ব্যবস্থা
+      গ্রহণের ওপর গুরুত্ব দেওয়া হয়েছে।
+    </p>
+
+
+    <p>
+      ইলিশের উৎপাদন টেকসই রাখতে জাটকা ও প্রজননক্ষম
+      ইলিশ রক্ষা, অবৈধভাবে মাছ আহরণ বন্ধ এবং
+      সংরক্ষণ কার্যক্রম আরও জোরদারের প্রয়োজনীয়তার
+      কথাও আলোচনায় উঠে আসে।
+    </p>
+
+
+    <p>
+      ইলিশ দেশের অর্থনীতি, জেলেদের জীবন-জীবিকা এবং
+      জাতীয় খাদ্য ও সংস্কৃতির সঙ্গে গভীরভাবে সম্পৃক্ত।
+      তাই এই সম্পদ রক্ষায় দীর্ঘমেয়াদি ও কার্যকর
+      পরিকল্পনার ওপর গুরুত্ব দেওয়া হচ্ছে।
+    </p>
+
+
+    <p>
+      <strong>
+        নবরেখা নিউজের সঙ্গে থাকুন। দেশের খবর সবার আগে
+        পেতে চোখ রাখুন নবরেখায়।
+      </strong>
+    </p>
+
+
+    <p>
+      <strong>তারিখ: ১১ আগস্ট ২০২৬</strong>
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- সংবাদ বিভাগ -->
+<section class="section" id="categories">
+
+  <div class="heading">
+
+    <h2>সংবাদ বিভাগ</h2>
+
+    <span>Categories</span>
+
+  </div>
+
+
+  <div class="cats">
+
+    <a id="national">🇧🇩 জাতীয়</a>
+
+    <a id="politics">🏛️ রাজনীতি</a>
+
+    <a id="world">🌍 দেশ-বিদেশ</a>
+
+    <a id="economy">💰 অর্থনীতি</a>
+
+    <a id="sports">🏏 খেলাধুলা</a>
+
+    <a id="entertainment">🎬 বিনোদন</a>
+
+    <a>👥 সামাজিক</a>
+
+    <a>🎙️ বিশেষ প্রতিবেদন</a>
+
+  </div>
+
+</section>
+
+
+<!-- আমাদের সম্পর্কে -->
+<section class="section two">
+
+
+  <div class="box" id="about">
+
+    <h2>নবরেখা নিউজ</h2>
+
+    <p>
+      সত্য ও বস্তুনিষ্ঠ সংবাদ মানুষের কাছে পৌঁছে দেওয়ার
+      প্রত্যয়ে নবরেখা নিউজের যাত্রা। জাতীয়, রাজনীতি,
+      অর্থনীতি, খেলাধুলা, বিনোদন ও সামাজিক বিষয়সহ
+      দেশ-বিদেশের গুরুত্বপূর্ণ খবর নিয়ে আমরা থাকব
+      আপনাদের পাশে।
+    </p>
+
+    <strong>
+      সত্যের পথে, বিশ্বের সাথে
+    </strong>
+
+  </div>
+
+
+  <div class="box" id="contact">
+
+    <h2>আমাদের সঙ্গে থাকুন</h2>
+
+    <p>
+      সর্বশেষ আপডেট পেতে নবরেখা নিউজের Facebook Page
+      অনুসরণ করুন।
+    </p>
+
+    <a
+      class="btn full"
+      href="https://www.facebook.com/noborekhanews"
+      target="_blank">
+
+      Facebook: @noborekhanews
+
+    </a>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+  <div class="wrap">
+
+    <b>নবরেখা নিউজ</b>
+
+    <p>
+      সত্যের পথে, বিশ্বের সাথে
+    </p>
+
+    <small>
+      © <span id="year"></span>
+      নবরেখা নিউজ. সর্বস্বত্ব সংরক্ষিত।
+    </small>
+
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
